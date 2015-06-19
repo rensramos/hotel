@@ -7,7 +7,6 @@ class Hotel {
     String location
     static hasMany
     static constraints = {
-        location(unique: true)
-        currency(unique: true)
+
     }
 }
