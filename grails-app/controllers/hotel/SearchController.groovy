@@ -5,7 +5,6 @@ class SearchController {
 //    def index() {}
     def results(){
         Hotel hotelResults = Hotel.findByLocationIlike("%$params.dpLocation%")
-        println(hotelResults)
         return [searchResults: hotelResults]
     }
 

@@ -21,19 +21,13 @@
         <div class="message" role="status">${flash.message}</div>
     </g:if>
     <table>
-        <thead>
-        <tr>
-
-            <g:sortableColumn property="name" title="${message(code: 'hotel.name.label', default: 'Name')}" />
-
-            <g:sortableColumn property="price" title="${message(code: 'hotel.price.label', default: 'Price')}" />
-
-            <g:sortableColumn property="currency" title="${message(code: 'hotel.currency.label', default: 'Currency')}" />
-
-            <g:sortableColumn property="location" title="${message(code: 'hotel.location.label', default: 'Location')}" />
-
-        </tr>
-        </thead>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Currency</th>
+        <th>Location</th>
+        <th>CheckIn</th>
+        <th>Checkout</th>
+        <th>TotalPrice</th>
         <tbody>
         <g:each in="${searchResults}" var="searchResult">
             <tr>
@@ -41,6 +35,9 @@
                 <td>${searchResult.price}</td>
                 <td>${searchResult.currency}</td>
                 <td>${searchResult.location}</td>
+                <td>CheckIn</td>
+                <td>Checkout</td>
+                <td>Total Price</td>
             </tr>
         </g:each>
         </tbody>
