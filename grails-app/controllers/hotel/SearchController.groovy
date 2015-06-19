@@ -5,10 +5,13 @@ class SearchController {
 //    def index() {}
     def results(){
         Hotel hotelResults = Hotel.findByLocationIlike("%$params.dpLocation%")
-//        def checkIn = params.checkIn
-//        def checkOut = params.checkOut
-//        def currency = params.dpCurrency
-        return [searchResults: hotelResults]
+        def checkIn = params.checkIn
+        def checkOut = params.checkOut
+        def currency = params.dpCurrency
+        println(checkIn)
+        println(checkOut)
+        println(currency)
+        return [searchResults: hotelResults, checkIn:checkIn, checkOut:checkOut, currency:currency]
     }
 
     def create(Long id){

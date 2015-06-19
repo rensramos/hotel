@@ -27,7 +27,7 @@
         <th>Location</th>
         <th>CheckIn</th>
         <th>Checkout</th>
-        <th>TotalPrice</th>
+        %{--<th>TotalPrice</th>--}%
         <tbody>
         <g:each in="${searchResults}" var="searchResult">
             <tr>
@@ -35,9 +35,9 @@
                 <td>${searchResult.price}</td>
                 <td>${searchResult.currency}</td>
                 <td>${searchResult.location}</td>
-                <td>CheckIn</td>
-                <td>Checkout</td>
-                <td>Total Price</td>
+                <td>${checkIn}</td>
+                <td>${checkOut}</td>
+                %{--<td>${checkIn}</td>--}%
             </tr>
         </g:each>
         </tbody>
