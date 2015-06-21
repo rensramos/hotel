@@ -2,10 +2,8 @@ package hotel
 
 class Hotel {
     String name
-    Integer price
-    String currency
     String location
-    static hasMany
+    static hasMany = [room: Room]
     static constraints = {
 
     }
