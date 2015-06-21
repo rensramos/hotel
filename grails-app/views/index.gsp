@@ -1,4 +1,5 @@
-<%@ page import="hotel.Hotel" %>
+<%@ page import="hotel.Hotel; hotel.HotelService" %>
+<%def hotelService = grailsApplication.classLoader.loadClass('hotel.HotelService').newInstance() %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,6 +7,7 @@
 	<title>Black Market Hotel</title>
 </head>
 <body>
+
 <div class="container">
 	<div class="row search-container">
 		<g:form controller="Search" name="searchForm" method="GET" action="results">
@@ -19,7 +21,7 @@
 				<g:select class="height-fix fluid-width btn btn-default dropdown-toggle" name="dpLocation" from="${Hotel.list()}" optionValue ="${{it.location}}" optionKey="${{it.location}}"/>
 			</div>
 			<div class="col-md-2 dp-currency">
-				<g:render template="/layouts/currency-list"/>
+			<g:select class="height-fix fluid-width btn btn-default dropdown-toggle" name="dpCurrency" from="${hotelService.currencyName()}"/>
 			</div>
 			<div class="col-md-2 submit-button gotham-bold">
 				<g:submitButton controller="Search" action="results" name="Book Now" class="height-fix fluid-width btn btn-primary"/>

@@ -24,7 +24,13 @@ class HotelService {
 //    & currencies = USD,AUD,CAD,PLN,MXN
 //    & format = 1
 
-    def currencyValue() {
-        return currencyData.json.quotes
+    def currencyName() {
+        println('aw')
+        return currencyData.json.quotes.keys()
     }
+    def currencyValue(currency) {
+        return currencyData.json.rates."${dpCurrency}"
+    }
+
 }
+
