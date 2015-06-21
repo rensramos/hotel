@@ -1,20 +1,17 @@
 package hotel
 
-class SearchController {
 
-//    def index() {}
+class SearchController {
+    def hotelService
     def results(){
         Hotel hotelResults = Hotel.findByLocationIlike("%$params.dpLocation%")
-        def checkIn = params.checkIn
-        def checkOut = params.checkOut
-        def currency = params.dpCurrency
-        def totalDay = checkIn + checkOut
-            println(totalDay)
-//        println(checkIn)
-//        println(checkOut)
-//        println(currency)
+        def checkIn =  Date.parse("MM/dd/yyyy", params?.checkIn)
+        def checkOut = Date.parse("MM/dd/yyyy", params?.checkOut)
+        def daysCount = hotelService.dateCount(checkIn,checkOut)
 
-        return [searchResults: hotelResults, checkIn:checkIn, checkOut:checkOut, currency:currency]
+
+        println(daysCount)
+        return [searchResults: hotelResults, daysCount:daysCount]
     }
 
     def create(Long id){
