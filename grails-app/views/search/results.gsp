@@ -32,8 +32,8 @@
         <g:each in="${searchResults}" var="searchResult">
             <tr>
                 <td>${searchResult.name}</td>
-                <td>${searchResult.price}</td>
-                <td>${searchResult.currency}</td>
+                %{--<td>${searchResult.roomRate}</td>--}%
+                %{--<td>${searchResult.currency}</td>--}%
                 <td>${searchResult.location}</td>
                 <td>${checkIn}</td>
                 <td>${checkOut}</td>

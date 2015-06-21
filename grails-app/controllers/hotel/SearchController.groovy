@@ -8,9 +8,12 @@ class SearchController {
         def checkIn = params.checkIn
         def checkOut = params.checkOut
         def currency = params.dpCurrency
-        println(checkIn)
-        println(checkOut)
-        println(currency)
+        def totalDay = checkIn + checkOut
+            println(totalDay)
+//        println(checkIn)
+//        println(checkOut)
+//        println(currency)
+
         return [searchResults: hotelResults, checkIn:checkIn, checkOut:checkOut, currency:currency]
     }
 
