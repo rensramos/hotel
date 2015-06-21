@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b8d3f6b8-6a04-411a-8ee3-1423b97b3016" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/BootStrap$_closure1.class" afterPath="$PROJECT_DIR$/target/classes/BootStrap$_closure1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/BootStrap$_closure2.class" afterPath="$PROJECT_DIR$/target/classes/BootStrap$_closure2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/BootStrap.class" afterPath="$PROJECT_DIR$/target/classes/BootStrap.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/hotel/SearchController.class" afterPath="$PROJECT_DIR$/target/classes/hotel/SearchController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/conf/BootStrap.groovy" afterPath="$PROJECT_DIR$/grails-app/conf/BootStrap.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/hotel/SearchController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/hotel/SearchController.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/assets/javascripts/application.js" afterPath="$PROJECT_DIR$/grails-app/assets/javascripts/application.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/index.gsp" afterPath="$PROJECT_DIR$/grails-app/views/index.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/search/results.gsp" afterPath="$PROJECT_DIR$/grails-app/views/search/results.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/stacktrace.log" afterPath="$PROJECT_DIR$/target/stacktrace.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/assets/stylesheets/index.sass" afterPath="$PROJECT_DIR$/grails-app/assets/stylesheets/index.sass" />
     </list>
     <ignored path="hotel.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,11 +26,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.gsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.gsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/views/index.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.617849">
+            <state vertical-scroll-proportion="-10.0">
               <caret line="15" column="117" selection-start-line="15" selection-start-column="117" selection-end-line="15" selection-end-column="117" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.sass" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/grails-app/assets/stylesheets/index.sass">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.617849">
+              <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -130,7 +130,6 @@
         <option value="$PROJECT_DIR$/grails-app/views/layouts/home.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/hotel/results.gsp" />
         <option value="$PROJECT_DIR$/grails-app/controllers/hotel/HotelController.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/assets/stylesheets/index.sass" />
         <option value="$PROJECT_DIR$/grails-app/domain/hotel/Reservation.groovy" />
         <option value="$PROJECT_DIR$/grails-app/domain/hotel/Hotel.groovy" />
         <option value="$PROJECT_DIR$/grails-app/domain/hotel/Room.groovy" />
@@ -139,6 +138,7 @@
         <option value="$PROJECT_DIR$/grails-app/views/search/results.gsp" />
         <option value="$PROJECT_DIR$/grails-app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/grails-app/views/index.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/assets/stylesheets/index.sass" />
       </list>
     </option>
   </component>
@@ -310,7 +310,7 @@
   <component name="PropertiesComponent">
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="application&#9;FILE&#9;file:///home/rens/Documents/Grails-Project/hotel/grails-app/assets/javascripts/application.js&#10;Boot&#9;FILE&#9;file:///home/rens/Documents/Grails-Project/hotel/grails-app/conf/BootStrap.groovy&#10;Bootstrap&#9;FILE&#9;file:///home/rensmanalili/Documents/grails/hotel/grails-app/conf/BootStrap.groovy&#10;applicat&#9;FILE&#9;file:///home/rensmanalili/Documents/grails/hotel/grails-app/assets/javascripts/application.js&#10;application.js&#9;FILE&#9;file:///home/rensmanalili/Documents/grails/hotel/web-app/js/application.js&#10;Boots&#9;FILE&#9;file:///home/rensmanalili/Documents/grails/hotel/grails-app/conf/BootStrap.groovy&#10;BuildCon&#9;FILE&#9;file:///home/rensmanalili/Documents/grails/hotel/grails-app/conf/BuildConfig.groovy" />
+    <property name="SearchEverywhereHistoryKey" value="sass&#9;FILE&#9;file:///home/rens/Documents/Grails-Project/hotel/grails-app/assets/stylesheets/index.sass&#10;application&#9;FILE&#9;file:///home/rens/Documents/Grails-Project/hotel/grails-app/assets/javascripts/application.js&#10;Boot&#9;FILE&#9;file:///home/rens/Documents/Grails-Project/hotel/grails-app/conf/BootStrap.groovy&#10;Bootstrap&#9;FILE&#9;file:///home/rensmanalili/Documents/grails/hotel/grails-app/conf/BootStrap.groovy&#10;applicat&#9;FILE&#9;file:///home/rensmanalili/Documents/grails/hotel/grails-app/assets/javascripts/application.js&#10;application.js&#9;FILE&#9;file:///home/rensmanalili/Documents/grails/hotel/web-app/js/application.js&#10;Boots&#9;FILE&#9;file:///home/rensmanalili/Documents/grails/hotel/grails-app/conf/BootStrap.groovy&#10;BuildCon&#9;FILE&#9;file:///home/rensmanalili/Documents/grails/hotel/grails-app/conf/BuildConfig.groovy" />
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="dynamic.classpath" value="false" />
@@ -603,12 +603,12 @@
       <updated>1434691807468</updated>
       <workItem from="1434691809028" duration="6373000" />
       <workItem from="1434699856702" duration="5692000" />
-      <workItem from="1434874961847" duration="4772000" />
+      <workItem from="1434874961847" duration="5116000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16837000" />
+    <option name="totallyTimeSpent" value="17181000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="0" width="1368" height="768" extended-state="6" />
@@ -765,13 +765,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/assets/stylesheets/index.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.430605">
-          <caret line="94" column="20" selection-start-line="94" selection-start-column="20" selection-end-line="94" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/controllers/hotel/HotelController.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0605042">
@@ -836,8 +829,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/index.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.617849">
+        <state vertical-scroll-proportion="-10.0">
           <caret line="15" column="117" selection-start-line="15" selection-start-column="117" selection-end-line="15" selection-end-column="117" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/assets/stylesheets/index.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.617849">
+          <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
           <folding />
         </state>
       </provider>
