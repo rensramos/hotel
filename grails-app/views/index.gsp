@@ -19,7 +19,7 @@
 				<g:select class="height-fix fluid-width btn btn-default dropdown-toggle" name="dpLocation" from="${Hotel.list()}" optionValue ="${{it.location}}" optionKey="${{it.location}}"/>
 			</div>
 			<div class="col-md-2 dp-currency">
-				%{--<g:select class="height-fix fluid-width btn btn-default dropdown-toggle" name="dpCurrency" from="${Hotel.list()}" optionValue ="${{it.currency}}" optionKey="${{it.currency}}"/>--}%
+				<g:render template="/layouts/currency-list"/>
 			</div>
 			<div class="col-md-2 submit-button gotham-bold">
 				<g:submitButton controller="Search" action="results" name="Book Now" class="height-fix fluid-width btn btn-primary"/>

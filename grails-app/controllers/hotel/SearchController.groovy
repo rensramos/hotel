@@ -1,6 +1,5 @@
 package hotel
 
-
 class SearchController {
     def hotelService
     def results(){
@@ -8,9 +7,8 @@ class SearchController {
         def checkIn =  Date.parse("MM/dd/yyyy", params?.checkIn)
         def checkOut = Date.parse("MM/dd/yyyy", params?.checkOut)
         def daysCount = hotelService.dateCount(checkIn,checkOut)
-
-
-        println(daysCount)
+        def currencyName = hotelService.currencyValue()
+        println(currencyName)
         return [searchResults: hotelResults, daysCount:daysCount]
     }
 
