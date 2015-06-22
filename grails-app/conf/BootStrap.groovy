@@ -1,8 +1,11 @@
 import hotel.*
+import hotel.auth.*
 
 class BootStrap {
 
     def init = { servletContext ->
+
+
         new Hotel(
                     name: "Black Market Hotel and Casino",
                     location: "Makati City",

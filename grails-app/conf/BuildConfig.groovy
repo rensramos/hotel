@@ -63,6 +63,7 @@ grails.project.dependency.resolution = {
         compile ":asset-pipeline:2.2.3"
         compile ":sass-asset-pipeline:2.1.1"
         compile ":rest-client-builder:2.1.1"
+        compile ":spring-security-core:2.0-RC5"
 
         // plugins needed at runtime but not for compilation
         runtime ":hibernate:3.6.10.15" // or ":hibernate4:4.3.5.2"
