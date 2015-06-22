@@ -6,46 +6,36 @@ class BootStrap {
         new Hotel(
                     name: "Black Market Hotel and Casino",
                     location: "Makati City",
-                    room: Room.get(2)
-
-
-        ).save()
-
-        new Hotel(
-                name: "Black Market Hotel and Casino",
-                location: "Pasig City",
-                room: Room.get(2)
+                    roomType: "Single Bed",
+                    description: "Experience Forever Single Bed",
+                    roomRate: 750
         ).save()
 
         new Hotel(
                 name: "Zap Hotel",
                 location: "Cabanatuan City",
-                room: Room.get(1)
+                roomType: "Double Bed",
+                description: "Experience Double Bed Sensation",
+                roomRate: 850
         ).save()
 
         new Hotel(
-                name: "Sogo Hotel",
-                location: "Bataan City",
-                room: Room.get(3)
+                name: "Tinder Hotel",
+                location: "Pasig City",
+                roomType: "Quadruple Bed",
+                description: "Experience long bed ",
+                roomRate: 950
         ).save()
 
-        new Room(
-                roomType: "Single Forever Room",
-                description: "Experience Triple layered foam Bed",
-                roomRate: 550
-        )
+        new Hotel(
+                name: "Solaire",
+                location: "Maldives City",
+                roomType: "Double Bed",
+                description: "Experience seashore view",
+                roomRate: 1250
+        ).save()
 
-        new Room(
-                roomType: "Couple Sensation Room",
-                description: "Experience Triple layered foam Bed",
-                roomRate: 650
-        )
 
-        new Room(
-                roomType: "Quadruple Room",
-                description: "Experience Triple layered foam Bed",
-                roomRate: 850
-        )
     }
     def destroy = {
     }
