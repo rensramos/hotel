@@ -35,8 +35,8 @@
             <tr>
                 <td>${searchResult.name}</td>
                 <td>${searchResult.roomRate}</td>
-                <td>${checkIn}</td>
-                <td>${checkOut}</td>
+                <td><g:formatDate format="yyyy-MM-dd" date="${checkIn}"/></td>
+                <td> <g:formatDate format="yyyy-MM-dd" date="${checkOut}"/></td>
                 <td>${currencyName}</td>
                 <td>${searchResult.location}</td>
                 <td>${totalPriceDue}</td>
