@@ -23,21 +23,24 @@
     <table>
         <th>Name</th>
         <th>Price</th>
-        <th>Currency</th>
-        <th>Location</th>
         <th>CheckIn</th>
         <th>Checkout</th>
+        <th>Currency Conversion</th>
+        <th>Location</th>
+        <th>Total Amount Due</th>
+
         %{--<th>TotalPrice</th>--}%
         <tbody>
         <g:each in="${searchResults}" var="searchResult">
             <tr>
                 <td>${searchResult.name}</td>
-                %{--<td>${searchResult.roomRate}</td>--}%
-                %{--<td>${searchResult.currency}</td>--}%
-                <td>${searchResult.location}</td>
+                <td>${searchResult.roomRate}</td>
                 <td>${checkIn}</td>
                 <td>${checkOut}</td>
-                %{--<td>${checkIn}</td>--}%
+                <td>${currencyName}</td>
+                <td>${searchResult.location}</td>
+                <td>${totalPriceDue}</td>
+
             </tr>
         </g:each>
         </tbody>

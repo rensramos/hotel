@@ -14,11 +14,12 @@ class SearchController {
         def checkIn =  Date.parse("MM/dd/yyyy", params?.checkIn)
         def checkOut = Date.parse("MM/dd/yyyy", params?.checkOut)
         def daysCount = hotelService.dateCount(checkIn,checkOut)
+        def currencyName =  hotelService.currencyName()
         def currencyValue = hotelService.currencyValue(params)
         def totalCurrency = currencyValue * hotelResults.roomRate
         def totalPriceDue = totalCurrency * daysCount
         println(totalPriceDue)
-        return [searchResults: hotelResults, daysCount:daysCount]
+        return [searchResults: hotelResults, checkIn:checkIn, checkOut:checkOut,currencyName:currencyName, currencyValue:currencyValue,totalPriceDue:totalPriceDue]
     }
 
     def create(Long id){
