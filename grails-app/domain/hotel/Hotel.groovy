@@ -6,7 +6,6 @@ class Hotel {
     String roomType
     String description
     BigDecimal roomRate
-    static hasMany = [room: Room]
     static constraints = {
 
     }

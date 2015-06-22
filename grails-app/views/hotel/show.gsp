@@ -23,11 +23,11 @@
 			</g:if>
 			<ol class="property-list hotel">
 			
-				<g:if test="${hotelInstance?.currency}">
+				<g:if test="${hotelInstance?.description}">
 				<li class="fieldcontain">
-					<span id="currency-label" class="property-label"><g:message code="hotel.currency.label" default="Currency" /></span>
+					<span id="description-label" class="property-label"><g:message code="hotel.description.label" default="Description" /></span>
 					
-						<span class="property-value" aria-labelledby="currency-label"><g:fieldValue bean="${hotelInstance}" field="currency"/></span>
+						<span class="property-value" aria-labelledby="description-label"><g:fieldValue bean="${hotelInstance}" field="description"/></span>
 					
 				</li>
 				</g:if>
@@ -50,11 +50,20 @@
 				</li>
 				</g:if>
 			
-				<g:if test="${hotelInstance?.price}">
+				<g:if test="${hotelInstance?.roomRate}">
 				<li class="fieldcontain">
-					<span id="price-label" class="property-label"><g:message code="hotel.price.label" default="Price" /></span>
+					<span id="roomRate-label" class="property-label"><g:message code="hotel.roomRate.label" default="Room Rate" /></span>
 					
-						<span class="property-value" aria-labelledby="price-label"><g:fieldValue bean="${hotelInstance}" field="price"/></span>
+						<span class="property-value" aria-labelledby="roomRate-label"><g:fieldValue bean="${hotelInstance}" field="roomRate"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${hotelInstance?.roomType}">
+				<li class="fieldcontain">
+					<span id="roomType-label" class="property-label"><g:message code="hotel.roomType.label" default="Room Type" /></span>
+					
+						<span class="property-value" aria-labelledby="roomType-label"><g:fieldValue bean="${hotelInstance}" field="roomType"/></span>
 					
 				</li>
 				</g:if>

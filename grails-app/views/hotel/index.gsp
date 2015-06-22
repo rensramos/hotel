@@ -24,13 +24,15 @@
 			<thead>
 					<tr>
 					
-						<g:sortableColumn property="currency" title="${message(code: 'hotel.currency.label', default: 'Currency')}" />
+						<g:sortableColumn property="description" title="${message(code: 'hotel.description.label', default: 'Description')}" />
 					
 						<g:sortableColumn property="location" title="${message(code: 'hotel.location.label', default: 'Location')}" />
 					
 						<g:sortableColumn property="name" title="${message(code: 'hotel.name.label', default: 'Name')}" />
 					
-						<g:sortableColumn property="price" title="${message(code: 'hotel.price.label', default: 'Price')}" />
+						<g:sortableColumn property="roomRate" title="${message(code: 'hotel.roomRate.label', default: 'Room Rate')}" />
+					
+						<g:sortableColumn property="roomType" title="${message(code: 'hotel.roomType.label', default: 'Room Type')}" />
 					
 					</tr>
 				</thead>
@@ -38,13 +40,15 @@
 				<g:each in="${hotelInstanceList}" status="i" var="hotelInstance">
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 					
-						<td><g:link action="show" id="${hotelInstance.id}">${fieldValue(bean: hotelInstance, field: "currency")}</g:link></td>
+						<td><g:link action="show" id="${hotelInstance.id}">${fieldValue(bean: hotelInstance, field: "description")}</g:link></td>
 					
 						<td>${fieldValue(bean: hotelInstance, field: "location")}</td>
 					
 						<td>${fieldValue(bean: hotelInstance, field: "name")}</td>
 					
-						<td>${fieldValue(bean: hotelInstance, field: "price")}</td>
+						<td>${fieldValue(bean: hotelInstance, field: "roomRate")}</td>
+					
+						<td>${fieldValue(bean: hotelInstance, field: "roomType")}</td>
 					
 					</tr>
 				</g:each>

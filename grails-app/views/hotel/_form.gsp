@@ -2,12 +2,12 @@
 
 
 
-<div class="fieldcontain ${hasErrors(bean: hotelInstance, field: 'currency', 'error')} required">
-	<label for="currency">
-		<g:message code="hotel.currency.label" default="Currency" />
+<div class="fieldcontain ${hasErrors(bean: hotelInstance, field: 'description', 'error')} required">
+	<label for="description">
+		<g:message code="hotel.description.label" default="Description" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="currency" required="" value="${hotelInstance?.currency}"/>
+	<g:textField name="description" required="" value="${hotelInstance?.description}"/>
 
 </div>
 
@@ -29,12 +29,21 @@
 
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: hotelInstance, field: 'price', 'error')} required">
-	<label for="price">
-		<g:message code="hotel.price.label" default="Price" />
+<div class="fieldcontain ${hasErrors(bean: hotelInstance, field: 'roomRate', 'error')} required">
+	<label for="roomRate">
+		<g:message code="hotel.roomRate.label" default="Room Rate" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:field name="price" type="number" value="${hotelInstance.price}" required=""/>
+	<g:field name="roomRate" value="${fieldValue(bean: hotelInstance, field: 'roomRate')}" required=""/>
+
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: hotelInstance, field: 'roomType', 'error')} required">
+	<label for="roomType">
+		<g:message code="hotel.roomType.label" default="Room Type" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:textField name="roomType" required="" value="${hotelInstance?.roomType}"/>
 
 </div>
 

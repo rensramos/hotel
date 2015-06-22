@@ -1,7 +1,6 @@
 package hotel
 
 
-
 import static org.springframework.http.HttpStatus.*
 import grails.transaction.Transactional
 
@@ -12,7 +11,7 @@ class HotelController {
 
     def index(Integer max) {
         params.max = Math.min(max ?: 10, 100)
-        respond Hotel.list(params), model:[hotelInstanceCount: Hotel.count()]
+        respond Hotel.list(params), model: [hotelInstanceCount: Hotel.count()]
     }
 
     def show(Hotel hotelInstance) {
@@ -31,11 +30,11 @@ class HotelController {
         }
 
         if (hotelInstance.hasErrors()) {
-            respond hotelInstance.errors, view:'create'
+            respond hotelInstance.errors, view: 'create'
             return
         }
 
-        hotelInstance.save flush:true
+        hotelInstance.save flush: true
 
         request.withFormat {
             form multipartForm {
@@ -58,18 +57,18 @@ class HotelController {
         }
 
         if (hotelInstance.hasErrors()) {
-            respond hotelInstance.errors, view:'edit'
+            respond hotelInstance.errors, view: 'edit'
             return
         }
 
-        hotelInstance.save flush:true
+        hotelInstance.save flush: true
 
         request.withFormat {
             form multipartForm {
                 flash.message = message(code: 'default.updated.message', args: [message(code: 'Hotel.label', default: 'Hotel'), hotelInstance.id])
                 redirect hotelInstance
             }
-            '*'{ respond hotelInstance, [status: OK] }
+            '*' { respond hotelInstance, [status: OK] }
         }
     }
 
@@ -81,14 +80,14 @@ class HotelController {
             return
         }
 
-        hotelInstance.delete flush:true
+        hotelInstance.delete flush: true
 
         request.withFormat {
             form multipartForm {
                 flash.message = message(code: 'default.deleted.message', args: [message(code: 'Hotel.label', default: 'Hotel'), hotelInstance.id])
-                redirect action:"index", method:"GET"
+                redirect action: "index", method: "GET"
             }
-            '*'{ render status: NO_CONTENT }
+            '*' { render status: NO_CONTENT }
         }
     }
 
@@ -98,7 +97,7 @@ class HotelController {
                 flash.message = message(code: 'default.not.found.message', args: [message(code: 'hotel.label', default: 'Hotel'), params.id])
                 redirect action: "index", method: "GET"
             }
-            '*'{ render status: NOT_FOUND }
+            '*' { render status: NOT_FOUND }
         }
     }
 }
