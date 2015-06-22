@@ -5,7 +5,12 @@ class BootStrap {
 
     def init = { servletContext ->
 
+        def adminRole = Role.findOrSaveWhere(authority: 'ROLE_ADMIN')
+        def user = User.findOrSaveWhere(username: 'admin',password:'admin',firstName:'Rens',lastName:'Ramos', emailAddress: 'rensramos@yahoo.com.ph')
 
+        if( !user.authorities.contains(adminRole)){
+            UserRole.create(user,adminRole,true)
+        }
         new Hotel(
                     name: "Black Market Hotel and Casino",
                     location: "Makati City",
