@@ -15,6 +15,16 @@ class HotelControllerSpec extends Specification {
         //params["name"] = 'someValidName'
     }
 
+    void "Test if the total Amount Due value is correct"() {
+
+        when:"result action and "
+        controller.index()
+
+        then:"The model is correct"
+        !model.hotelInstanceList
+        model.hotelInstanceCount == 0
+    }
+
     void "Test the index action returns the correct model"() {
 
         when:"The index action is executed"
