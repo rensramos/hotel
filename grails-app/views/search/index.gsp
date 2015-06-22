@@ -1,4 +1,4 @@
-<%@ page import="hotel.Hotel;" %>
+<%@ page import="hotel.Hotel" %>
 %{--<% def hotelService = application.getAttribute("org.codehaus.groovy.grails.APPLICATION_CONTEXT").getBean("HotelService") %>--}%
 <!DOCTYPE html>
 <html>

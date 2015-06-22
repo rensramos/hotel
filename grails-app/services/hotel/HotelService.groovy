@@ -16,7 +16,7 @@ class HotelService {
     }
 
     RestBuilder restAPI = new RestBuilder()
-    def currencyData = restAPI.get("http://www.apilayer.net/api/live?access_key=5a56fa5b1c673fdc1e36092793af5002&format=1")
+    def currencyData = restAPI.get("http://www.apilayer.net/api/live?access_key=9a0bc1d13c635835bd18586a57e76cf4&format=1")
 
 //    http://apilayer.net/api/live
 //    ? access_key = YOUR_ACCESS_KEY
@@ -26,10 +26,11 @@ class HotelService {
 
     def currencyName() {
         return currencyData.json.quotes.keys().sort()
+
     }
-    def currencyValue(currency) {
-        return currencyData.json.rates."${dpCurrency}"
-    }
+//    def currencyValue(currency) {
+//        return currencyData.json.rates."${dpCurrency}"
+//    }
 
 }
 
