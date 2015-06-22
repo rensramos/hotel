@@ -14,8 +14,9 @@ class SearchController {
         def checkIn =  Date.parse("MM/dd/yyyy", params?.checkIn)
         def checkOut = Date.parse("MM/dd/yyyy", params?.checkOut)
         def daysCount = hotelService.dateCount(checkIn,checkOut)
-        def currencyName = hotelService.currencyName()
-        println(currencyName)
+        def currencyValue = hotelService.currencyValue(params)
+//        def totalPrice = currencyValue * hotelResults.room
+        println(totalPrice)
         return [searchResults: hotelResults, daysCount:daysCount]
     }
 

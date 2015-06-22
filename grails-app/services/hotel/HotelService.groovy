@@ -28,9 +28,10 @@ class HotelService {
         return currencyData.json.quotes.keys().sort()
 
     }
-//    def currencyValue(currency) {
-//        return currencyData.json.rates."${dpCurrency}"
-//    }
+    def currencyValue(params) {
+        def currencyVal = params?.dpCurrency
+        return currencyData.json.quotes."${currencyVal}"
+    }
 
 }
 
