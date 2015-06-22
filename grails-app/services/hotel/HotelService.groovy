@@ -25,8 +25,7 @@ class HotelService {
 //    & format = 1
 
     def currencyName() {
-        println('aw')
-        return currencyData.json.quotes.keys()
+        return currencyData.json.quotes.keys().sort()
     }
     def currencyValue(currency) {
         return currencyData.json.rates."${dpCurrency}"
